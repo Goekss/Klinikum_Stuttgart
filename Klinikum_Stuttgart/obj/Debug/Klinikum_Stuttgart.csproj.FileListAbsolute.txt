@@ -1,0 +1,92 @@
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe.config
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.pdb
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.AssemblyReference.cache
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Frmeingang.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormPatientenLogin.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatRegistrieren.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatDetail.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPattEinstellung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrLogin.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrDetail.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrEinstellung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrBearbeitung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrAnkündigung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekLogin.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDetail.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrPanel.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrFach.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Properties.Resources.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.GenerateResource.cache
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.CoreCompileInputs.cache
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.exe
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.pdb
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\Klinikum_Stuttgart\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormSekTerList.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe.config
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.pdb
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.AssemblyReference.cache
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Frmeingang.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormPatientenLogin.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatRegistrieren.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatDetail.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPattEinstellung.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrLogin.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrDetail.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrEinstellung.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrBearbeitung.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrAnkündigung.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekLogin.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDetail.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrPanel.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrFach.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormSekTerList.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Properties.Resources.resources
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.GenerateResource.cache
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.CoreCompileInputs.cache
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.exe
+C:\Users\Onur Gökhan Bicer\source\repos\2324_E2FI2BT_Ein\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.pdb
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe.config
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.pdb
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.AssemblyReference.cache
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Frmeingang.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormPatientenLogin.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatRegistrieren.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatDetail.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPattEinstellung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrLogin.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrDetail.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrEinstellung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrBearbeitung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrAnkündigung.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekLogin.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDetail.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrPanel.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrFach.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormSekTerList.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Properties.Resources.resources
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.GenerateResource.cache
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.CoreCompileInputs.cache
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.exe
+C:\Users\Onur Gökhan Bicer\OneDrive - Netec GmbH\Masaüstü\KST\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.pdb
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.AssemblyReference.cache
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Frmeingang.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormPatientenLogin.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatRegistrieren.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPatDetail.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmPattEinstellung.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrLogin.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrDetail.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrEinstellung.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrBearbeitung.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmDrAnkündigung.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekLogin.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDetail.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrPanel.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FrmSekDrFach.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.FormSekTerList.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.Properties.Resources.resources
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.csproj.GenerateResource.cache
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.exe
+C:\Users\onurg\source\repos\Klinikum_Stuttgart\Klinikum_Stuttgart\obj\Debug\Klinikum_Stuttgart.pdb
