@@ -13,3 +13,5 @@
 
 - [2023-03-17 17:40:22] fix(security): hipaa/gdpr patient data privacy and audit log (#105)
 
+- [2023-03-19 10:24:18] refactor(services): hl7/fhir standard medical interoperability (#106)
+
