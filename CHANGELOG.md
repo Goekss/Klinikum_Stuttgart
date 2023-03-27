@@ -27,3 +27,5 @@
 
 - [2023-03-24 17:40:22] feat(surgery): operation theater scheduling and anesthesia logs (#112)
 
+- [2023-03-27 10:24:18] refactor(billing): medical service catalog and diagnosis coding (icd-10) (#113)
+
