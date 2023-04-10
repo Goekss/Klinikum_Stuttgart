@@ -43,3 +43,5 @@
 
 - [2023-04-07 10:24:18] feat(emergency): ambulance incoming telemetry and triage scoring (#120)
 
+- [2023-04-10 10:24:18] feat(patient): electronic health record and anamnesis module (#101)
+
