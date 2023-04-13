@@ -47,3 +47,5 @@
 
 - [2023-04-13 10:15:32] feat(doctor): appointment scheduling and shift management (#102)
 
+- [2023-04-13 15:42:07] feat(clinic): department bed allocation and transfer workflow (#103)
+
