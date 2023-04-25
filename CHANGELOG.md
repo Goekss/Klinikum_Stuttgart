@@ -59,3 +59,5 @@
 
 - [2023-04-22 15:42:07] docs: update clinical workflow and system compliance guide (#108)
 
+- [2023-04-25 10:15:32] feat(pharmacy): medication dosage tracking and prescription validation (#109)
+
