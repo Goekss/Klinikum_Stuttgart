@@ -65,3 +65,5 @@
 
 - [2023-04-28 10:15:32] fix(patient): validate national health insurance identifier format (#111)
 
+- [2023-04-28 15:42:07] feat(surgery): operation theater scheduling and anesthesia logs (#112)
+
