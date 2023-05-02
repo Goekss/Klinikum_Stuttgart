@@ -77,3 +77,5 @@
 
 - [2023-05-02 15:10:44] feat(nursing): daily vital signs entry and nurse shift notes (#117)
 
+- [2023-05-02 17:25:39] style(views): responsive layout for tablet-based mobile ward rounds (#118)
+
