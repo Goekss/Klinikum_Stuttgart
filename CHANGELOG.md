@@ -71,3 +71,5 @@
 
 - [2023-04-30 15:42:07] perf(cache): in-memory caching for active in-patient bed census (#114)
 
+- [2023-05-02 09:45:10] feat(radiology): dicom image viewer metadata integration (#115)
+
