@@ -81,3 +81,5 @@
 
 - [2023-05-04 10:24:18] test(services): integration tests for patient discharge workflow (#119)
 
+- [2023-05-07 10:15:32] feat(emergency): ambulance incoming telemetry and triage scoring (#120)
+
