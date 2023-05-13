@@ -89,3 +89,5 @@
 
 - [2023-05-13 09:30:14] feat(clinic): department bed allocation and transfer workflow (#103)
 
+- [2023-05-13 14:15:48] feat(lab): pathology and diagnostic test results integration (#104)
+
