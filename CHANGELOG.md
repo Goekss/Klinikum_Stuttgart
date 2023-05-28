@@ -115,3 +115,5 @@
 
 - [2023-05-28 10:15:32] fix(auth): enforce medical staff biometric session timeout (#116)
 
+- [2023-05-28 15:42:07] feat(nursing): daily vital signs entry and nurse shift notes (#117)
+
