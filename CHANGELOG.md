@@ -131,3 +131,5 @@
 
 - [2023-06-09 10:24:18] feat(lab): pathology and diagnostic test results integration (#104)
 
+- [2023-06-12 10:15:32] fix(security): hipaa/gdpr patient data privacy and audit log (#105)
+
