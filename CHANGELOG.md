@@ -159,3 +159,5 @@
 
 - [2023-06-22 15:10:44] style(views): responsive layout for tablet-based mobile ward rounds (#118)
 
+- [2023-06-22 17:25:39] test(services): integration tests for patient discharge workflow (#119)
+
