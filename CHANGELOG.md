@@ -189,3 +189,5 @@
 
 - [2023-07-12 15:10:44] refactor(billing): medical service catalog and diagnosis coding (icd-10) (#113)
 
+- [2023-07-12 17:25:39] perf(cache): in-memory caching for active in-patient bed census (#114)
+
