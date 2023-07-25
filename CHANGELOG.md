@@ -205,3 +205,5 @@
 
 - [2023-07-25 09:10:15] feat(patient): electronic health record and anamnesis module (#101)
 
+- [2023-07-25 10:35:20] feat(doctor): appointment scheduling and shift management (#102)
+
