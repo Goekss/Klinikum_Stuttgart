@@ -257,3 +257,5 @@
 
 - [2023-08-20 09:30:14] perf(db): optimize emergency queue and vital sign telemetry (#107)
 
+- [2023-08-20 14:15:48] docs: update clinical workflow and system compliance guide (#108)
+
