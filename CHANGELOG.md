@@ -261,3 +261,5 @@
 
 - [2023-08-20 17:40:22] feat(pharmacy): medication dosage tracking and prescription validation (#109)
 
+- [2023-08-22 09:30:14] style(ui): improve emergency triage dashboard contrast and alerts (#110)
+
