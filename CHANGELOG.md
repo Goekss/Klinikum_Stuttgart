@@ -295,3 +295,5 @@
 
 - [2023-09-13 17:40:22] refactor(services): hl7/fhir standard medical interoperability (#106)
 
+- [2023-09-16 10:24:18] perf(db): optimize emergency queue and vital sign telemetry (#107)
+
