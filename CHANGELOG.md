@@ -303,3 +303,5 @@
 
 - [2023-09-21 09:30:14] style(ui): improve emergency triage dashboard contrast and alerts (#110)
 
+- [2023-09-21 14:15:48] fix(patient): validate national health insurance identifier format (#111)
+
