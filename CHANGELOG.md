@@ -313,3 +313,5 @@
 
 - [2023-09-27 10:24:18] feat(radiology): dicom image viewer metadata integration (#115)
 
+- [2023-09-29 10:24:18] fix(auth): enforce medical staff biometric session timeout (#116)
+
