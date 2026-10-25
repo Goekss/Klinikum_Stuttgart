@@ -132,6 +132,7 @@
             this.groupBox1.Location = new System.Drawing.Point(5, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(251, 100);
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informationen von Ihnen";
@@ -141,6 +142,7 @@
             this.Rchankndg.Location = new System.Drawing.Point(9, 26);
             this.Rchankndg.Name = "Rchankndg";
             this.Rchankndg.Size = new System.Drawing.Size(236, 166);
+            this.Rchankndg.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.Rchankndg.TabIndex = 0;
             this.Rchankndg.Text = "";
             // 
@@ -149,6 +151,7 @@
             this.btnankng.Location = new System.Drawing.Point(6, 198);
             this.btnankng.Name = "btnankng";
             this.btnankng.Size = new System.Drawing.Size(77, 31);
+            this.btnankng.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.btnankng.TabIndex = 1;
             this.btnankng.Text = "Erstellen";
             this.btnankng.UseVisualStyleBackColor = true;
@@ -161,6 +164,7 @@
             this.groupBox2.Location = new System.Drawing.Point(5, 109);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(251, 248);
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mitteilungen";
@@ -186,6 +190,7 @@
             this.groupBox3.Location = new System.Drawing.Point(259, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(277, 335);
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Termin - Panel";
@@ -340,6 +345,7 @@
             this.groupBox4.Location = new System.Drawing.Point(545, 238);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(568, 191);
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Fächer";
@@ -360,6 +366,7 @@
             this.groupBox5.Location = new System.Drawing.Point(545, 12);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(568, 220);
+            this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ärzten / Ärztinnen";
@@ -385,6 +392,7 @@
             this.groupBox6.Location = new System.Drawing.Point(2, 344);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(534, 78);
+            this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Zugriff";

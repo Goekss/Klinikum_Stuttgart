@@ -18,6 +18,7 @@ namespace Klinikum_Stuttgart
         public FrmDrAnkündigung()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
 
         private void FrmDrAnkündigung_Load(object sender, EventArgs e)

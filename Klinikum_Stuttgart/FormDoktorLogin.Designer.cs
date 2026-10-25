@@ -67,7 +67,6 @@
             this.MaskedID.Name = "MaskedID";
             this.MaskedID.Size = new System.Drawing.Size(143, 25);
             this.MaskedID.TabIndex = 1;
-            this.MaskedID.Text = "10000000000";
             // 
             // Txtpasswort
             // 
@@ -75,7 +74,6 @@
             this.Txtpasswort.Name = "Txtpasswort";
             this.Txtpasswort.Size = new System.Drawing.Size(143, 25);
             this.Txtpasswort.TabIndex = 2;
-            this.Txtpasswort.Text = "1111";
             this.Txtpasswort.UseSystemPasswordChar = true;
             // 
             // Btneinloggin
@@ -114,6 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(394, 248);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Btneinloggin);

@@ -17,6 +17,7 @@ namespace Klinikum_Stuttgart
         public FrmPattEinstellung()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
 
 
@@ -68,5 +69,3 @@ namespace Klinikum_Stuttgart
         }
     }
     }
-
-

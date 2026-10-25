@@ -16,6 +16,7 @@ namespace Klinikum_Stuttgart
         public FrmSekDrPanel()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
         SQLverbindung conn = new SQLverbindung();   
         private void FrmSekDrPanel_Load(object sender, EventArgs e)

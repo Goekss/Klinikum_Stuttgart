@@ -16,6 +16,7 @@ namespace Klinikum_Stuttgart
         public FrmDrBearbeitung()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
          SQLverbindung conn = new SQLverbindung();
         public string IDNo;

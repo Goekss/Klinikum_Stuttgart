@@ -140,6 +140,7 @@
       <DependentUpon>FormSekretariatDrFächer.cs</DependentUpon>
     </Compile>
     <Compile Include="SQLverbindung.cs" />
+    <Compile Include="UiHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormEINGANG.resx">

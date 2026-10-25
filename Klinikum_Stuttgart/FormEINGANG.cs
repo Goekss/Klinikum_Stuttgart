@@ -15,6 +15,7 @@ namespace Klinikum_Stuttgart
         public Frmeingang()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
 
         private void BtnPatientLogin_Click(object sender, EventArgs e)

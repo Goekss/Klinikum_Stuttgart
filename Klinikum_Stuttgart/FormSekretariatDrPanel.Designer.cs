@@ -139,6 +139,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(254, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(637, 205);
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -148,6 +149,7 @@
             this.BtnLösch.Location = new System.Drawing.Point(169, 159);
             this.BtnLösch.Name = "BtnLösch";
             this.BtnLösch.Size = new System.Drawing.Size(79, 26);
+            this.BtnLösch.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnLösch.TabIndex = 27;
             this.BtnLösch.Text = "Löschen";
             this.BtnLösch.UseVisualStyleBackColor = true;
@@ -159,6 +161,7 @@
             this.BtnSave.Location = new System.Drawing.Point(91, 159);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(72, 26);
+            this.BtnSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnSave.TabIndex = 26;
             this.BtnSave.Text = "Einfügen";
             this.BtnSave.UseVisualStyleBackColor = true;
@@ -170,6 +173,7 @@
             this.BtnAktuel.Location = new System.Drawing.Point(125, 191);
             this.BtnAktuel.Name = "BtnAktuel";
             this.BtnAktuel.Size = new System.Drawing.Size(87, 26);
+            this.BtnAktuel.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnAktuel.TabIndex = 28;
             this.BtnAktuel.Text = "Aktualisieren";
             this.BtnAktuel.UseVisualStyleBackColor = true;

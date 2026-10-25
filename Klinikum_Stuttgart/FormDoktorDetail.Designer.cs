@@ -93,6 +93,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 121);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(339, 219);
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Terminübersicht :";
@@ -121,6 +122,7 @@
             this.groupBox3.Location = new System.Drawing.Point(357, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(740, 438);
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Terminlist";
@@ -146,6 +148,7 @@
             this.BtnEinstellung.Location = new System.Drawing.Point(15, 362);
             this.BtnEinstellung.Name = "BtnEinstellung";
             this.BtnEinstellung.Size = new System.Drawing.Size(165, 42);
+            this.BtnEinstellung.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnEinstellung.TabIndex = 3;
             this.BtnEinstellung.Text = "             Bearbeitung";
             this.BtnEinstellung.UseVisualStyleBackColor = false;
@@ -160,6 +163,7 @@
             this.BtnAnkündigung.Location = new System.Drawing.Point(186, 362);
             this.BtnAnkündigung.Name = "BtnAnkündigung";
             this.BtnAnkündigung.Size = new System.Drawing.Size(165, 42);
+            this.BtnAnkündigung.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnAnkündigung.TabIndex = 2;
             this.BtnAnkündigung.Text = "                Ankündigung";
             this.BtnAnkündigung.UseVisualStyleBackColor = false;
@@ -174,6 +178,7 @@
             this.BtnExit.Location = new System.Drawing.Point(15, 407);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(336, 40);
+            this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.BtnExit.TabIndex = 4;
             this.BtnExit.Text = "            Ausloggen";
             this.BtnExit.UseVisualStyleBackColor = false;

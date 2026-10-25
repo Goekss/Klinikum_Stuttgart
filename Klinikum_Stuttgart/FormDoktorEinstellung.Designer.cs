@@ -147,6 +147,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(266, 236);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Controls.Add(this.TxtPasswort);
             this.Controls.Add(this.BtnAktuel);
             this.Controls.Add(this.CmbFach);

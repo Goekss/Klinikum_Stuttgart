@@ -66,6 +66,7 @@
             this.groupBox1.Location = new System.Drawing.Point(3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(323, 114);
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informationen von Ihnen";
@@ -125,6 +126,7 @@
             this.groupBox2.Location = new System.Drawing.Point(5, 123);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(323, 375);
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Termin Panel";
@@ -157,6 +159,7 @@
             this.lnkEinstellung.Location = new System.Drawing.Point(4, 355);
             this.lnkEinstellung.Name = "lnkEinstellung";
             this.lnkEinstellung.Size = new System.Drawing.Size(103, 17);
+            this.lnkEinstellung.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.lnkEinstellung.TabIndex = 7;
             this.lnkEinstellung.TabStop = true;
             this.lnkEinstellung.Text = "      Einstellungen";
@@ -167,6 +170,7 @@
             this.BtnTermin.Location = new System.Drawing.Point(174, 318);
             this.BtnTermin.Name = "BtnTermin";
             this.BtnTermin.Size = new System.Drawing.Size(142, 23);
+            this.BtnTermin.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             this.BtnTermin.TabIndex = 4;
             this.BtnTermin.Text = "einen Termin buchen";
             this.BtnTermin.UseVisualStyleBackColor = true;
@@ -197,6 +201,7 @@
             this.RchBeschwerungen.Location = new System.Drawing.Point(126, 161);
             this.RchBeschwerungen.Name = "RchBeschwerungen";
             this.RchBeschwerungen.Size = new System.Drawing.Size(193, 151);
+            this.RchBeschwerungen.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.RchBeschwerungen.TabIndex = 2;
             this.RchBeschwerungen.MaxLength = 80;
             this.RchBeschwerungen.Text = "";
@@ -235,6 +240,7 @@
             this.groupBox3.Location = new System.Drawing.Point(334, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(745, 253);
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Vergangene Termine";
@@ -254,6 +260,7 @@
             this.groupBox4.Location = new System.Drawing.Point(334, 261);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(745, 236);
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Aktuelle Termine";

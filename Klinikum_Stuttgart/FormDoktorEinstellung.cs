@@ -15,6 +15,7 @@ namespace Klinikum_Stuttgart
         public FrmDrEinstellung()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
 
         private void Form3_Load(object sender, EventArgs e)

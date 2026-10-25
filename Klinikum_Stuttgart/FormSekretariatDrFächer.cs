@@ -17,6 +17,7 @@ namespace Klinikum_Stuttgart
         public FrmSekDrFach()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
         
         SQLverbindung conn = new SQLverbindung();

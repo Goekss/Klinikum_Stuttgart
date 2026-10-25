@@ -168,7 +168,8 @@ Klinikum_Stuttgart/
 ├─ Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac   Datenbank-Export (Schema + Daten)
 └─ Klinikum_Stuttgart/
    ├─ Program.cs                            Einstiegspunkt + globale Fehlerbehandlung
-   ├─ SQLverbindung.cs                      zentrale Datenbankverbindung / Demo-Modus
+   ├─ SQLverbindung.cs                      zentrale Verbindung / Demo-Modus
+   ├─ UiHelper.cs                           Fenster zentrieren + an den Bildschirm anpassen
    ├─ App.config                            Connection-String (KlinikumConnectionString)
    ├─ Database/
    │  └─ Klinikum_Stuttgart_Demo.sql        Schema + Beispieldaten (in die .exe eingebettet)
@@ -361,6 +362,7 @@ Klinikum_Stuttgart/
 └─ Klinikum_Stuttgart/
    ├─ Program.cs                            Giriş noktası + global hata yönetimi
    ├─ SQLverbindung.cs                      merkezî bağlantı yönetimi / demo modu
+   ├─ UiHelper.cs                           pencereleri ortalama + ekrana sığdırma
    ├─ App.config                            Connection string (KlinikumConnectionString)
    ├─ Database/
    │  └─ Klinikum_Stuttgart_Demo.sql        Şema + örnek veriler (exe içine gömülü)
@@ -555,6 +557,7 @@ Klinikum_Stuttgart/
 └─ Klinikum_Stuttgart/
    ├─ Program.cs                            entry point + global error handling
    ├─ SQLverbindung.cs                      central connection handling / demo mode
+   ├─ UiHelper.cs                           window centering + screen-size clamping
    ├─ App.config                            connection string (KlinikumConnectionString)
    ├─ Database/
    │  └─ Klinikum_Stuttgart_Demo.sql        schema + sample data (embedded into the exe)

@@ -16,6 +16,7 @@ namespace Klinikum_Stuttgart
         public FormPatientenLogin()
         {
             InitializeComponent();
+            UiHelper.Anpassen(this);
         }
 
         SQLverbindung vrb = new SQLverbindung(); 

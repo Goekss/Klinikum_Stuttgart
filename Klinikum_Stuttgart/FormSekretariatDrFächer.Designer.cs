@@ -46,6 +46,7 @@
             this.BtnAktuel.Location = new System.Drawing.Point(141, 188);
             this.BtnAktuel.Name = "BtnAktuel";
             this.BtnAktuel.Size = new System.Drawing.Size(105, 32);
+            this.BtnAktuel.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnAktuel.TabIndex = 42;
             this.BtnAktuel.Text = "Aktualisieren";
             this.BtnAktuel.UseVisualStyleBackColor = true;
@@ -57,6 +58,7 @@
             this.BtnLösch.Location = new System.Drawing.Point(141, 150);
             this.BtnLösch.Name = "BtnLösch";
             this.BtnLösch.Size = new System.Drawing.Size(105, 32);
+            this.BtnLösch.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnLösch.TabIndex = 41;
             this.BtnLösch.Text = "Löschen";
             this.BtnLösch.UseVisualStyleBackColor = true;
@@ -68,6 +70,7 @@
             this.BtnSave.Location = new System.Drawing.Point(141, 112);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(105, 32);
+            this.BtnSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.BtnSave.TabIndex = 40;
             this.BtnSave.Text = "Einfügen";
             this.BtnSave.UseVisualStyleBackColor = true;
@@ -80,6 +83,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(252, 31);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(277, 189);
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             this.dataGridView1.TabIndex = 39;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
