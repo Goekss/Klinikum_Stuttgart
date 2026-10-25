@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -186,6 +187,7 @@
     <EmbeddedResource Include="FormSekTerList.resx">
       <DependentUpon>FormSekTerList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Database\Klinikum_Stuttgart_Demo.sql" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

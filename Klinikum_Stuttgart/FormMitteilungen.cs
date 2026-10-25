@@ -13,17 +13,21 @@ namespace Klinikum_Stuttgart
 {
     public partial class FrmDrAnkündigung : Form
     {
-        SqlConnection verbindung = new SqlConnection("Data Source=DESKTOP-86KQ4NB\\SQLEXPRESS;Initial Catalog=Klinikum_Stuttgart;Integrated Security=True");
+        SQLverbindung conn = new SQLverbindung();
+
         public FrmDrAnkündigung()
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection();   
+
         private void FrmDrAnkündigung_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable(); 
-            SqlDataAdapter adapter = new SqlDataAdapter("Select * From Tbl_Mitteilungen",verbindung);
-            adapter.Fill(dt);
+            DataTable dt = new DataTable();
+            using (SqlConnection verbindung = conn.verbindung())
+            using (SqlDataAdapter adapter = new SqlDataAdapter("Select * From Tbl_Mitteilungen", verbindung))
+            {
+                adapter.Fill(dt);
+            }
             dataGridView1.DataSource = dt;
         }
     }

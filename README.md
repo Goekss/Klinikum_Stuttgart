@@ -1,4 +1,4 @@
-# 🏥 Klinikum Stuttgart - Hospital Management System
+# 🏥 Klinikum Stuttgart – Hospital Management System
 
 <p align="center">
   <img src="https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET Framework 4.7.2" />
@@ -15,61 +15,198 @@
   <a href="#-english">🇬🇧 English</a>
 </p>
 
+> **Hinweis / Not / Note:** Dies ist ein **Portfolio- und Lernprojekt** (Mock/Demo), kein produktionsreifes Medizinprodukt.
+> Bu bir **portfolyo / öğrenme projesidir** (mock/demo), üretim ortamı için hazır bir tıbbi ürün değildir.
+> This is a **portfolio / learning project** (mock/demo), not a production-ready medical product.
+
 ---
 
 ## 🇩🇪 Deutsch
 
 ### 👋 Herzlich Willkommen!
-**Klinikum Stuttgart** ist ein modernes, benutzerfreundliches Krankenhausverwaltungssystem (Desktop-Anwendung), das mit **C# Windows Forms** und **Microsoft SQL Server** entwickelt wurde.
 
-Das Projekt entstand aus Leidenschaft für die Softwareentwicklung, um reale Krankenhausabläufe – von der Terminvergabe über die Patientenbetreuung bis hin zur Verwaltung durch das Sekretariat – einfach, intuitiv und digital zu lösen.
+**Klinikum Stuttgart** ist eine Desktop-Anwendung zur Verwaltung von Krankenhausabläufen: Patientenregistrierung, Terminvergabe, Arztverwaltung, Fachabteilungen und klinikweite Mitteilungen. Die Oberfläche ist vollständig auf **Deutsch**.
 
----
-
-### ✨ Was bietet das System? (Hauptmodule)
-
-#### 1. 🚪 Haupteingang (`FormEINGANG`)
-Ein zentraler Willkommensbildschirm mit direkter Weiterleitung für:
-* 🩺 **Patienten**
-* 👨‍⚕️ **Ärzte**
-* 📋 **Sekretariat & Verwaltung**
-
-#### 2. 🩺 Patientenbereich
-* **Registrierung & Login:** Schnelle Anmeldung mit Bürger-ID und Passwort.
-* **Termin buchen:** Fachrichtung (Kardiologie, Chirurgie etc.) und Arzt auswählen, freie Termine prüfen und mit wenigen Klicks reservieren.
-* **Beschwerden angeben:** Vorab-Notizen für den behandelnden Arzt hinterlassen.
-* **Terminhistorie & Profil:** Vergangene Termine einsehen und persönliche Daten jederzeit aktualisieren.
-
-#### 3. 👨‍⚕️ Ärztebereich
-* **Sicherer Login:** Zugriff nur für registriertes medizinisches Personal.
-* **Tagesübersicht:** Alle anstehenden Patiententermine und Details auf einen Blick.
-* **Patientenbeschwerden:** Detaillierte Vorabinformationen der Patienten direkt einsehen.
-* **Klinik-Mitteilungen:** Wichtige Bekanntmachungen des Hauses sofort lesen.
-* **Profilverwaltung:** Eigene Fachrichtung und Zugangsdaten anpassen.
-
-#### 4. 📋 Sekretariat & Klinikleitung
-* **Live-Dashboard:** Aktuelle Ärzte- und Fachrichtungslisten im Überblick.
-* **Terminplanung:** Neue Terminslots für Ärzte anlegen und freigeben.
-* **Ärzteverwaltung (CRUD):** Neue Ärzte anlegen, Daten aktualisieren oder bei Bedarf entfernen.
-* **Fachabteilungen (CRUD):** Medizinische Abteilungen flexibel erstellen und verwalten.
-* **Rundschreiben:** Mitteilungen für das gesamte Klinikpersonal veröffentlichen.
-* **Termin-Gesamtliste:** Komplette Übersicht aller vergebenen und offenen Termine.
+Das Projekt ist als **vorzeigbares Demo-System** gedacht: Es lässt sich nach dem Klonen ohne Datenbankkonfiguration starten, enthält Beispieldaten und ist so strukturiert, dass es zu einem echten Produkt weiterentwickelt werden kann.
 
 ---
 
-### 🗄️ Datenbank & Einrichtung
-Das Projekt nutzt **Microsoft SQL Server (ADO.NET)** für eine sichere und strukturierte Datenspeicherung.
-* Die vorbereitete Datenbankdatei [`Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac`](./Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac) liegt direkt im Projektordner.
-* In SSMS einfach über **"Import Data-tier Application"** importieren.
-* Den eigenen Connection-String in [`SQLverbindung.cs`](./Klinikum_Stuttgart/SQLverbindung.cs) eintragen – fertig!
+### ✨ Funktionsumfang
+
+| Modul | Funktionen |
+|---|---|
+| 🚪 Haupteingang | Zentrale Startseite mit Weiterleitung zu Patient, Arzt und Sekretariat |
+| 🩺 Patient | Registrierung, Login, freie Termine suchen (Fachrichtung → Arzt), Termin buchen, Beschwerden hinterlegen, Terminhistorie, Profil bearbeiten |
+| 👨‍⚕️ Arzt | Login, eigene Terminliste, Patienten-Beschwerden einsehen, Klinik-Mitteilungen lesen, Profil bearbeiten |
+| 📋 Sekretariat | Ärzte- und Fachrichtungslisten, Terminslots anlegen, Ärzte-CRUD, Fächer-CRUD, Mitteilungen versenden, Gesamtliste aller Termine |
+
+> Der Arztbereich listet **alle** Termine des angemeldeten Arztes – nicht nur die des aktuellen Tages.
 
 ---
 
-### 🚀 Schnellanleitung zum Starten
+### 🧰 Tech-Stack
+
+| Bereich | Verwendet |
+|---|---|
+| Sprache | C# (C# 5-kompatibel, klassisches Projektformat) |
+| UI | Windows Forms (`WinExe`) |
+| Zielplattform | .NET Framework **4.7.2** |
+| Datenbank | Microsoft SQL Server (Express, LocalDB oder höher) |
+| Datenzugriff | ADO.NET (`System.Data.SqlClient`), SQL-Skripte direkt in den Formularen |
+| Externe Pakete | **keine** (nur .NET-Framework-Bordmittel, kein NuGet) |
+| IDE / Build | Visual Studio 2022 (Solution Format 12.00, VS 17.7) oder MSBuild |
+| Lizenz | MIT |
+
+---
+
+### 📦 Voraussetzungen
+
+* Windows 10/11
+* **.NET Framework 4.7.2** (Runtime ist in Windows enthalten; für den Build wird das Developer Pack bzw. Visual Studio benötigt)
+* Zum **Ausführen**: keine weiteren Tools
+* Zum **Selbstbauen**: Visual Studio 2022 mit Workload „.NET-Desktopentwicklung“ *oder* MSBuild
+* Zum **Verbinden mit einer echten Datenbank**: SQL Server (Express genügt) + SQL Server Management Studio (SSMS)
+* Zum **Demo-Modus ohne Setup**: SQL Server Express **LocalDB** oder eine laufende Express-Instanz `.\SQLEXPRESS`
+
+---
+
+### 🚀 Schnellstart
+
+#### Variante A – Demo-Modus (kein Setup nötig)
+
 ```powershell
-# Direkt die fertige Anwendung starten:
 Start-Process .\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
 ```
+
+Die Anwendung sucht beim Start automatisch nach einer lokalen SQL-Server-Instanz
+(`(LocalDB)\MSSQLLocalDB`, `.\SQLEXPRESS`, `localhost`), legt bei Bedarf die Datenbank
+`Klinikum_Stuttgart_Demo` an, spielt Schema und Beispieldaten ein und öffnet das Hauptfenster.
+Im Fenstertitel erscheint dann **„Klinikum Stuttgart – Demo-Modus“**.
+
+Findet die Anwendung keinen SQL Server, erscheint eine Meldung mit Einrichtungsanleitung statt eines Absturzes.
+
+#### Variante B – Eigene Datenbank verwenden
+
+1. **Datenbank bereitstellen** – eine der beiden Möglichkeiten:
+   * [`Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac`](./Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac) in SSMS über *„Data-tier Application importieren“* importieren, **oder**
+   * [`Klinikum_Stuttgart_Demo.sql`](./Klinikum_Stuttgart/Database/Klinikum_Stuttgart_Demo.sql) in SSMS in einer neuen Datenbank ausführen (Schema + Beispieldaten, idempotent).
+2. **Connection-String setzen** – genau **eine** Stelle, in [`App.config`](./Klinikum_Stuttgart/App.config):
+
+   ```xml
+   <connectionStrings>
+     <add name="KlinikumConnectionString"
+          connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=Klinikum_Stuttgart;Integrated Security=True"
+          providerName="System.Data.SqlClient" />
+   </connectionStrings>
+   ```
+
+   Bleibt der Wert leer, greift automatisch der Demo-Modus.
+3. Anwendung starten (siehe Variante A) oder in Visual Studio mit **F5**.
+
+> ⚠️ Der Connection-String steht **nicht mehr** im Quellcode. Die früher fest eingetragene
+> Verbindung in `FormMitteilungen.cs` wurde entfernt – alle Formulare nutzen jetzt
+> [`SQLverbindung.cs`](./Klinikum_Stuttgart/SQLverbindung.cs).
+
+#### Variante C – Selbst kompilieren
+
+```powershell
+# In Visual Studio 2022: Klinikum_Stuttgart.sln öffnen und F5 drücken
+# oder über MSBuild:
+msbuild .\Klinikum_Stuttgart.sln /t:Build /p:Configuration=Debug
+```
+
+Ergebnis: `Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe`
+
+> `dotnet build` funktioniert **nicht**, weil das Projekt das klassische (Nicht-SDK-)Format verwendet. Bitte MSBuild oder Visual Studio nutzen.
+
+---
+
+### 🔑 Demo-Zugänge
+
+Diese Zugänge sind in der automatisch erzeugten Demo-Datenbank enthalten:
+
+| Rolle | Bürger-ID | Passwort | Name |
+|---|---|---|---|
+| 👨‍⚕️ Arzt | `10000000000` | `1111` | Stefanie Schneiders (Gynäkologie) |
+| 👨‍⚕️ Arzt | `70000000000` | `7777` | Michael Hofflinger (Pathologie, hat freie Termine) |
+| 👨‍⚕️ Arzt | `20000000000` | `2222` | Erica Müller (Gynäkologie, hat freie Termine) |
+| 📋 Sekretariat | `11223344556` | `1234` | Lina Finn |
+| 📋 Sekretariat | `11111111111` | `1234` | Felix Emma |
+| 🩺 Patient | `12345678910` | `1010` | Aysel Konuk |
+| 🩺 Patient | `12121212121` | `1212` | Hans Franker |
+| 🩺 Patient | `91919191919` | `5555` | Recai Büberci |
+
+Beim Import der `.bacpac` stehen dieselben Arzt- und Sekretariats-Zugänge zur Verfügung; die Patientendaten der Original-Exportdatei können abweichen.
+
+---
+
+### 🗄️ Datenbankschema
+
+6 Tabellen, jeder Primärschlüssel ist ein `IDENTITY`-Feld. Es gibt **keine** Fremdschlüssel – Beziehungen werden über Textwerte hergestellt (z. B. `Tbl_Termine.TerminArzt` = „Vorname Nachname“).
+
+| Tabelle | Spalten |
+|---|---|
+| `Tbl_Patient` | `Ptid` (smallint, identity), `PtName`, `PtNachname`, `PtBürgerID` (nchar(11)), `PtTelnummer`, `PtPasswort`, `PtGeschlecht` |
+| `Tbl_Doktor` | `Drid` (tinyint, identity), `DrName`, `DrNachname`, `DrFachrichtung`, `DrBürgerID` (char(11)), `DrPasswort` |
+| `Tbl_Sekretärin` | `Sekrid` (tinyint, identity), `SekrNameNachname`, `SekrBürgerID` (char(11)), `SekrPasswort` |
+| `Tbl_Fach` | `Fachid` (tinyint, identity), `FachName` |
+| `Tbl_Termine` | `Terminid` (int, identity), `TerminDatum` (Text, `TT.MM.JJJJ`), `TerminUhr` (Text, `HH:MM`), `TerminFach`, `TerminArzt`, `TerminStatus` (bit, Default `0` = frei), `Ptid`, `PatientBeschwerden` (varchar(80)) |
+| `Tbl_Mitteilungen` | `MitteilungsId` (smallint, identity), `Mitteilung` (varchar(max)) |
+
+---
+
+### 🗂️ Projektstruktur
+
+```text
+Klinikum_Stuttgart/
+├─ Klinikum_Stuttgart.sln                  Visual-Studio-Solution
+├─ README.md
+├─ LICENSE                                  MIT
+├─ Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac   Datenbank-Export (Schema + Daten)
+└─ Klinikum_Stuttgart/
+   ├─ Program.cs                            Einstiegspunkt + globale Fehlerbehandlung
+   ├─ SQLverbindung.cs                      zentrale Datenbankverbindung / Demo-Modus
+   ├─ App.config                            Connection-String (KlinikumConnectionString)
+   ├─ Database/
+   │  └─ Klinikum_Stuttgart_Demo.sql        Schema + Beispieldaten (in die .exe eingebettet)
+   ├─ Form*.cs / Form*.Designer.cs / *.resx 15 Formulare inkl. Layout und Bildern
+   └─ Properties/                           AssemblyInfo, Ressourcen, Settings
+```
+
+| Formular | Modul | Aufgabe |
+|---|---|---|
+| `FormEINGANG` | Start | Weiterleitung zu den drei Portalen |
+| `FormPatientLogin` | Patient | Anmeldung, Link zur Registrierung |
+| `FormPatientRegistrierung` | Patient | Neuanlage eines Patienten |
+| `FormPatientDetail` | Patient | Terminsuche/-buchung, Historie, Beschwerden |
+| `FormPatientEinstellung` | Patient | Profil ändern |
+| `FormDoktorLogin` | Arzt | Anmeldung |
+| `FormDoktorDetail` | Arzt | Terminliste + Beschwerden des Patienten |
+| `FormDoktorEinstellung` | Arzt | Menüfenster zum Profil |
+| `FormDoktorBearbeitung` | Arzt | Profil (Fachrichtung, Passwort) ändern |
+| `FormMitteilungen` | Arzt | Klinik-Mitteilungen anzeigen |
+| `FormSekretariatLogin` | Sekretariat | Anmeldung |
+| `FormSekretariatDetail` | Sekretariat | Übersicht, Terminslot anlegen, Mitteilung senden |
+| `FormSekretariatDrPanel` | Sekretariat | Ärzte-CRUD |
+| `FormSekretariatDrFächer` | Sekretariat | Fächer-CRUD |
+| `FormSekTerList` | Sekretariat | Liste aller Termine |
+
+---
+
+### ⚠️ Bekannte Einschränkungen (bewusst offen)
+
+Dieses Projekt ist ein Lern-/Demo-Stand. Für einen echten Einsatz fehlen unter anderem:
+
+* **Passwörter im Klartext** (`PtPasswort`, `DrPasswort`, `SekrPasswort`) – kein Hashing, keine Salts
+* **Zwei Abfragen mit String-Verkettung** (SQL-Injection-Risiko): `FormPatientDetail.cs` (Zimmer-/Terminabfrage) und `FormDoktorDetail.cs`
+* **Keine Fremdschlüssel, Indizes oder Unique-Constraints** → keine referenzielle Integrität
+* **Legacy-Datenzugriff**: `SQLverbindung.verbindung()` öffnet pro Aufruf eine neue Verbindung; einige Aufrufstellen schließen eine andere Instanz als die geöffnete (Aufräumen übernimmt der GC). Im Demo-Modus ist deshalb `Pooling=False` gesetzt.
+* **Keine automatisierten Tests**, kein Logging, keine Async-Verarbeitung
+* **Nur Deutsch** in der Oberfläche (keine Lokalisierung)
+* Termin-Datum/-Uhrzeit als Text, Arztzuordnung über den Namen statt über IDs
+* Große Bilder sind in den `.resx`-Dateien eingebettet und blähen das Repository auf
+
+**Nächste sinnvolle Schritte:** Passwort-Hashing, restliche Abfragen parametrisieren, PK/FK + Indizes ergänzen, Repository-Schicht und Tests einführen, Internationalisierung.
 
 ---
 
@@ -77,54 +214,188 @@ Start-Process .\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
 
 ## 🇹🇷 Türkçe
 
-### 👋 Merhaba ve Hoş Geldiniz!
-**Klinikum Stuttgart**, sağlık kuruluşlarının günlük operasyonlarını kolaylaştırmak ve uçtan uca dijitalleştirmek için **C# Windows Forms** ve **Microsoft SQL Server** kullanılarak geliştirilmiş samimi ve kapsamlı bir hastane otomasyon sistemidir.
+### 👋 Merhaba!
 
-Yazılım geliştirme sürecinde pratik yapmak, gerçek dünya senaryolarını (hasta-doktor-sekreterya etkileşimleri) modellemek ve temiz bir masaüstü deneyimi sunmak amacıyla özenle hazırlandı.
+**Klinikum Stuttgart**, hastane iş akışlarını yöneten bir masaüstü uygulamasıdır: hasta kaydı, randevu verme, doktor yönetimi, branş yönetimi ve hastane duyuruları. Arayüz tamamen **Almanca**dır.
 
----
-
-### ✨ Neler Yapabilirsiniz? (Modüller)
-
-#### 1. 🚪 Ana Giriş Kapısı (`FormEINGANG`)
-Kullanıcıyı karşılayan ve tek tıkla doğru panele yönlendiren giriş ekranı:
-* 🩺 **Hasta Girişi**
-* 👨‍⚕️ **Doktor Girişi**
-* 📋 **Sekreterya Girişi**
-
-#### 2. 🩺 Hasta Modülü
-* **Kolay Kayıt ve Giriş:** Kimlik numarası (BürgerID) ve şifre ile sisteme anında dahil olma.
-* **Akıllı Randevu Alma:** Poliklinik (branş) ve hekim seçimi yaparak boş randevu saatlerini listeleme.
-* **Şikayetini Paylaş:** Muayene öncesinde doktora iletilmek üzere şikayet metni ekleme.
-* **Geçmişim & Profil:** Eski randevuları takip etme ve iletişim/şifre bilgilerini güncelleme.
-
-#### 3. 👨‍⚕️ Doktor Masası
-* **Kişiselleştirilmiş Panel:** Giriş yapan hekime özel randevu listesi.
-* **Hasta Şikayetlerini İnceleme:** Randevuya tıklayarak hastanın belirttiği şikayeti anında görme.
-* **Duyuru Takibi:** Hastane yönetiminin yayınladığı güncel anons ve duyuruları okuma.
-* **Profil Düzenleme:** Branş ve erişim bilgilerini güncelleme.
-
-#### 4. 📋 Sekreterya & Yönetim Merkezi
-* **Merkezi İzleme:** Tüm aktif branşları ve görevli doktorları tek ekranda görme.
-* **Randevu Oluşturma:** Tarih ve saat belirleyerek hekimlere yeni randevu slotları açma.
-* **Doktor Yönetimi (CRUD):** Doktor ekleme, güncelleme ve silme işlemleri.
-* **Branş Yönetimi (CRUD):** Yeni poliklinik/servis tanımlama ve düzenleme.
-* **Genel Duyuru Sistemi:** Tüm hastane personeline anında bilgilendirme mesajı gönderme.
-* **Toplu Randevu Listesi:** Sistemdeki tüm randevuları filtreleme ve inceleme.
+Proje bir **portfolyo / demo sistemi** olarak tasarlandı: Klonladıktan sonra veritabanı ayarı yapmadan çalışır, örnek verilerle gelir ve gerçek bir ürüne dönüştürülebilecek şekilde yapılandırılmıştır.
 
 ---
 
-### 🗄️ Veritabanı Kurulumu
-* Proje kök dizinindeki [`Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac`](./Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac) yedeğini SQL Server Management Studio (SSMS) üzerinden *Import Data-tier Application* ile içeri aktarabilirsiniz.
-* [`SQLverbindung.cs`](./Klinikum_Stuttgart/SQLverbindung.cs) içindeki bağlantı cümlesini kendi yerel SQL Server adresinizle eşleştirmeniz yeterlidir.
+### ✨ Özellikler
+
+| Modül | İşlevler |
+|---|---|
+| 🚪 Ana giriş | Hasta, doktor ve sekreterya portallarına yönlendirme |
+| 🩺 Hasta | Kayıt, giriş, boş randevu arama (branş → doktor), randevu alma, şikayet yazma, randevu geçmişi, profil düzenleme |
+| 👨‍⚕️ Doktor | Giriş, kendi randevu listesi, hasta şikayetlerini görüntüleme, duyuruları okuma, profil düzenleme |
+| 📋 Sekreterya | Doktor ve branş listeleri, randevu slotu oluşturma, doktor CRUD, branş CRUD, duyuru gönderme, tüm randevuların listesi |
+
+> Doktor paneli **sadece bugünün** değil, o doktorun **tüm** randevularını listeler.
 
 ---
 
-### 🚀 Terminalden Tek Tıkla Çalıştırma
+### 🧰 Teknoloji Yığını
+
+| Alan | Kullanılan |
+|---|---|
+| Dil | C# (C# 5 uyumlu, klasik proje formatı) |
+| Arayüz | Windows Forms (`WinExe`) |
+| Hedef platform | .NET Framework **4.7.2** |
+| Veritabanı | Microsoft SQL Server (Express, LocalDB veya üstü) |
+| Veri erişimi | ADO.NET (`System.Data.SqlClient`), SQL sorguları formların içinde |
+| Harici paket | **yok** (sadece .NET Framework kitaplıkları, NuGet kullanılmıyor) |
+| IDE / derleme | Visual Studio 2022 (Solution 12.00, VS 17.7) veya MSBuild |
+| Lisans | MIT |
+
+---
+
+### 📦 Ön koşullar
+
+* Windows 10/11
+* **.NET Framework 4.7.2** (çalıştırmak için Windows'ta hazır gelir; derlemek için Developer Pack veya Visual Studio gerekir)
+* **Çalıştırmak için** başka araç gerekmez
+* **Derlemek için**: Visual Studio 2022 (".NET masaüstü geliştirme" iş yükü) *veya* MSBuild
+* **Gerçek veritabanına bağlanmak için**: SQL Server (Express yeterli) + SQL Server Management Studio (SSMS)
+* **Kurulumsuz demo modu için**: SQL Server Express **LocalDB** ya da çalışan bir `.\SQLEXPRESS` örneği
+
+---
+
+### 🚀 Hızlı Başlangıç
+
+#### Seçenek A – Demo modu (kurulum gerekmez)
+
 ```powershell
-# Derlenmiş uygulamayı bağımsız pencerede başlatır:
 Start-Process .\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
 ```
+
+Uygulama açılışta yerel bir SQL Server örneği arar (`(LocalDB)\MSSQLLocalDB`, `.\SQLEXPRESS`, `localhost`),
+gerekirse `Klinikum_Stuttgart_Demo` veritabanını oluşturur, şemayı ve örnek verileri yükler ve ana pencereyi açar.
+Pencere başlığında **„Klinikum Stuttgart – Demo-Modus“** yazar.
+
+SQL Server bulunamazsa çökme yerine, kurulum adımlarını anlatan bir mesaj gösterilir.
+
+#### Seçenek B – Kendi veritabanını kullanma
+
+1. **Veritabanını hazırlayın** – iki yoldan biri:
+   * [`Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac`](./Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac) dosyasını SSMS'te *"Data-tier Application Import"* ile içe aktarın, **veya**
+   * [`Klinikum_Stuttgart_Demo.sql`](./Klinikum_Stuttgart/Database/Klinikum_Stuttgart_Demo.sql) script'ini SSMS'te yeni bir veritabanında çalıştırın (şema + örnek veriler, idempotent).
+2. **Connection string'i ayarlayın** – tek bir yerde, [`App.config`](./Klinikum_Stuttgart/App.config):
+
+   ```xml
+   <connectionStrings>
+     <add name="KlinikumConnectionString"
+          connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=Klinikum_Stuttgart;Integrated Security=True"
+          providerName="System.Data.SqlClient" />
+   </connectionStrings>
+   ```
+
+   Boş bırakılırsa otomatik demo modu kullanılır.
+3. Uygulamayı başlatın (Seçenek A) veya Visual Studio'da **F5**.
+
+> ⚠️ Connection string artık **kodun içinde değil**. Daha önce `FormMitteilungen.cs` içine sabitlenen
+> bağlantı kaldırıldı; tüm formlar [`SQLverbindung.cs`](./Klinikum_Stuttgart/SQLverbindung.cs) üzerinden bağlanır.
+
+#### Seçenek C – Kendiniz derleyin
+
+```powershell
+# Visual Studio 2022: Klinikum_Stuttgart.sln dosyasını açın ve F5
+# veya MSBuild ile:
+msbuild .\Klinikum_Stuttgart.sln /t:Build /p:Configuration=Debug
+```
+
+Çıktı: `Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe`
+
+> Proje klasik (SDK olmayan) formatta olduğu için `dotnet build` **çalışmaz**. MSBuild veya Visual Studio kullanın.
+
+---
+
+### 🔑 Demo hesapları
+
+Otomatik oluşturulan demo veritabanında bu hesaplar hazırdır:
+
+| Rol | Bürger-ID | Şifre | Ad |
+|---|---|---|---|
+| 👨‍⚕️ Doktor | `10000000000` | `1111` | Stefanie Schneiders (Jinekoloji) |
+| 👨‍⚕️ Doktor | `70000000000` | `7777` | Michael Hofflinger (Patoloji, boş randevusu var) |
+| 👨‍⚕️ Doktor | `20000000000` | `2222` | Erica Müller (Jinekoloji, boş randevusu var) |
+| 📋 Sekreterya | `11223344556` | `1234` | Lina Finn |
+| 📋 Sekreterya | `11111111111` | `1234` | Felix Emma |
+| 🩺 Hasta | `12345678910` | `1010` | Aysel Konuk |
+| 🩺 Hasta | `12121212121` | `1212` | Hans Franker |
+| 🩺 Hasta | `91919191919` | `5555` | Recai Büberci |
+
+`.bacpac` içe aktarıldığında aynı doktor ve sekreterya hesapları geçerlidir; orijinal yedekteki hasta verileri farklılık gösterebilir.
+
+---
+
+### 🗄️ Veritabanı şeması
+
+6 tablo; tüm birincil anahtarlar `IDENTITY`. **Yabancı anahtar yoktur** – ilişkiler metin değerlerle kurulur (örn. `Tbl_Termine.TerminArzt` = „Ad Soyad“).
+
+| Tablo | Kolonlar |
+|---|---|
+| `Tbl_Patient` | `Ptid` (smallint, identity), `PtName`, `PtNachname`, `PtBürgerID` (nchar(11)), `PtTelnummer`, `PtPasswort`, `PtGeschlecht` |
+| `Tbl_Doktor` | `Drid` (tinyint, identity), `DrName`, `DrNachname`, `DrFachrichtung`, `DrBürgerID` (char(11)), `DrPasswort` |
+| `Tbl_Sekretärin` | `Sekrid` (tinyint, identity), `SekrNameNachname`, `SekrBürgerID` (char(11)), `SekrPasswort` |
+| `Tbl_Fach` | `Fachid` (tinyint, identity), `FachName` |
+| `Tbl_Termine` | `Terminid` (int, identity), `TerminDatum` (metin, `GG.AA.YYYY`), `TerminUhr` (metin, `SS:DD`), `TerminFach`, `TerminArzt`, `TerminStatus` (bit, varsayılan `0` = boş), `Ptid`, `PatientBeschwerden` (varchar(80)) |
+| `Tbl_Mitteilungen` | `MitteilungsId` (smallint, identity), `Mitteilung` (varchar(max)) |
+
+---
+
+### 🗂️ Proje yapısı
+
+```text
+Klinikum_Stuttgart/
+├─ Klinikum_Stuttgart.sln                  Visual Studio çözümü
+├─ README.md
+├─ LICENSE                                  MIT
+├─ Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac   Veritabanı yedeği (şema + veri)
+└─ Klinikum_Stuttgart/
+   ├─ Program.cs                            Giriş noktası + global hata yönetimi
+   ├─ SQLverbindung.cs                      merkezî bağlantı yönetimi / demo modu
+   ├─ App.config                            Connection string (KlinikumConnectionString)
+   ├─ Database/
+   │  └─ Klinikum_Stuttgart_Demo.sql        Şema + örnek veriler (exe içine gömülü)
+   ├─ Form*.cs / Form*.Designer.cs / *.resx 15 form (tasarım ve görseller dahil)
+   └─ Properties/                           AssemblyInfo, kaynaklar, ayarlar
+```
+
+| Form | Modül | Görev |
+|---|---|---|
+| `FormEINGANG` | Başlangıç | Üç portala yönlendirme |
+| `FormPatientLogin` | Hasta | Giriş, kayıt bağlantısı |
+| `FormPatientRegistrierung` | Hasta | Yeni hasta kaydı |
+| `FormPatientDetail` | Hasta | Randevu arama/ alma, geçmiş, şikayet |
+| `FormPatientEinstellung` | Hasta | Profil güncelleme |
+| `FormDoktorLogin` | Doktor | Giriş |
+| `FormDoktorDetail` | Doktor | Randevu listesi + hasta şikayeti |
+| `FormDoktorEinstellung` | Doktor | Profile giden menü penceresi |
+| `FormDoktorBearbeitung` | Doktor | Profil (branş, şifre) güncelleme |
+| `FormMitteilungen` | Doktor | Hastane duyurularını görüntüleme |
+| `FormSekretariatLogin` | Sekreterya | Giriş |
+| `FormSekretariatDetail` | Sekreterya | Genel bakış, randevu slotu oluşturma, duyuru gönderme |
+| `FormSekretariatDrPanel` | Sekreterya | Doktor CRUD |
+| `FormSekretariatDrFächer` | Sekreterya | Branş CRUD |
+| `FormSekTerList` | Sekreterya | Tüm randevuların listesi |
+
+---
+
+### ⚠️ Bilinen sınırlamalar (bilerek açık bırakıldı)
+
+Bu proje bir öğrenme/demo sürümüdür. Gerçek kullanım için eksikler:
+
+* **Şifreler düz metin** (`PtPasswort`, `DrPasswort`, `SekrPasswort`) – hash/salt yok
+* **İki sorguda string birleştirme** (SQL injection riski): `FormPatientDetail.cs` ve `FormDoktorDetail.cs`
+* **Yabancı anahtar, index ve unique kısıt yok** → referans bütünlüğü yok
+* **Eski veri erişim deseni**: `SQLverbindung.verbindung()` her çağrıda yeni bağlantı açar; bazı yerlerde açılan bağlantı yerine başka bir örnek kapatılır (temizliği GC yapar). Bu nedenle demo modunda `Pooling=False` kullanılır.
+* **Otomatik test yok**, loglama yok, async işlem yok
+* Arayüz **sadece Almanca** (yerelleştirme yok)
+* Randevu tarihi/saati metin olarak tutulur, doktor eşleşmesi isim üzerinden yapılır
+* Görseller `.resx` dosyalarına gömülü olduğu için depo boyutu büyük
+
+**Sonraki mantıklı adımlar:** şifre hash'leme, kalan sorguları parametreleştirme, PK/FK + index ekleme, repository katmanı ve testler, çoklu dil desteği.
 
 ---
 
@@ -133,61 +404,200 @@ Start-Process .\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
 ## 🇬🇧 English
 
 ### 👋 Welcome!
-**Klinikum Stuttgart** is a complete, user-friendly Hospital Information & Management desktop system crafted with **C# Windows Forms** and **Microsoft SQL Server**.
 
-Designed with care and passion for building practical, real-world software, it digitizes core healthcare workflows including patient appointments, doctor schedules, department management, and hospital announcements.
+**Klinikum Stuttgart** is a desktop application for hospital administration: patient registration, appointment booking, doctor management, departments and hospital-wide announcements. The user interface is entirely in **German**.
 
----
-
-### ✨ Key Modules & Capabilities
-
-#### 1. 🚪 Gateway Portal (`FormEINGANG`)
-A welcoming hub providing instant navigation to three dedicated areas:
-* 🩺 **Patient Portal**
-* 👨‍⚕️ **Doctor Portal**
-* 📋 **Secretariat / Administration Portal**
-
-#### 2. 🩺 Patient Experience
-* **Sign Up & Authentication:** Quick registration with Citizen ID and password.
-* **Easy Appointment Booking:** Filter by specialty, choose a doctor, browse open slots, and confirm appointments.
-* **Symptom / Complaint Notes:** Patients can explain their health complaints ahead of time.
-* **History & Profile Management:** Track past visits and update profile or contact details anytime.
-
-#### 3. 👨‍⚕️ Doctor Workspace
-* **Personalized Schedule:** Automatic listing of all assigned patient appointments.
-* **Patient Complaints at a Glance:** Click on any appointment to review patient symptoms instantly.
-* **Internal Announcements:** Stay informed with clinic-wide notices from management.
-* **Profile Settings:** Update specialty and security credentials easily.
-
-#### 4. 📋 Secretariat & Hospital Operations
-* **Live Overview:** Real-time visibility into active clinics and medical personnel.
-* **Slot Generation:** Schedule new date/time appointment slots for doctors.
-* **Doctor Administration (CRUD):** Add, update, or remove doctor profiles.
-* **Department Administration (CRUD):** Manage medical units and departments seamlessly.
-* **Hospital Broadcasting:** Dispatch announcements to all medical staff in one click.
-* **Master Appointment List:** Comprehensive log of all booked and vacant appointments.
+The project is meant as a **presentable demo system**: it runs right after cloning without any database configuration, ships with sample data, and is structured so it can be developed into a real product.
 
 ---
 
-### 🗄️ Database Setup
-* A pre-built database archive [`Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac`](./Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac) is included in the root directory.
-* Import it into SQL Server via SSMS (*Import Data-tier Application*).
-* Update your connection string in [`SQLverbindung.cs`](./Klinikum_Stuttgart/SQLverbindung.cs) and you're good to go!
+### ✨ Features
+
+| Module | Capabilities |
+|---|---|
+| 🚪 Gateway | Central start screen routing to patient, doctor and secretariat areas |
+| 🩺 Patient | Registration, login, search free slots (specialty → doctor), book an appointment, submit complaints, appointment history, profile editing |
+| 👨‍⚕️ Doctor | Login, personal appointment list, review patient complaints, read announcements, edit profile |
+| 📋 Secretariat | Doctor and department lists, create appointment slots, doctor CRUD, department CRUD, send announcements, master appointment list |
+
+> The doctor workspace lists **all** appointments of the signed-in doctor, not just today's.
 
 ---
 
-### 🚀 Quick Run from Terminal
+### 🧰 Tech Stack
+
+| Area | Used |
+|---|---|
+| Language | C# (C# 5 compatible, classic project format) |
+| UI | Windows Forms (`WinExe`) |
+| Target | .NET Framework **4.7.2** |
+| Database | Microsoft SQL Server (Express, LocalDB or higher) |
+| Data access | ADO.NET (`System.Data.SqlClient`), SQL embedded in the forms |
+| External packages | **none** (framework libraries only, no NuGet) |
+| IDE / build | Visual Studio 2022 (solution format 12.00, VS 17.7) or MSBuild |
+| License | MIT |
+
+---
+
+### 📦 Prerequisites
+
+* Windows 10/11
+* **.NET Framework 4.7.2** (runtime ships with Windows; building requires the developer pack or Visual Studio)
+* To **run**: nothing else
+* To **build**: Visual Studio 2022 with the “.NET desktop development” workload *or* MSBuild
+* To **use a real database**: SQL Server (Express is enough) + SQL Server Management Studio (SSMS)
+* For the **zero-config demo mode**: SQL Server Express **LocalDB** or a running `.\SQLEXPRESS` instance
+
+---
+
+### 🚀 Quick Start
+
+#### Option A – Demo mode (no setup)
+
 ```powershell
-# Launch the pre-compiled application:
 Start-Process .\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
 ```
+
+On startup the application looks for a local SQL Server instance
+(`(LocalDB)\MSSQLLocalDB`, `.\SQLEXPRESS`, `localhost`), creates the database
+`Klinikum_Stuttgart_Demo` if needed, applies schema and sample data, and opens the main window.
+The window title then shows **“Klinikum Stuttgart – Demo-Modus”**.
+
+If no SQL Server can be found, a dialog with setup instructions appears instead of a crash.
+
+#### Option B – Use your own database
+
+1. **Provide the database** – either:
+   * import [`Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac`](./Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac) via SSMS *“Import Data-tier Application”*, **or**
+   * run [`Klinikum_Stuttgart_Demo.sql`](./Klinikum_Stuttgart/Database/Klinikum_Stuttgart_Demo.sql) in SSMS against a new database (schema + sample data, idempotent).
+2. **Set the connection string** – in exactly one place, [`App.config`](./Klinikum_Stuttgart/App.config):
+
+   ```xml
+   <connectionStrings>
+     <add name="KlinikumConnectionString"
+          connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=Klinikum_Stuttgart;Integrated Security=True"
+          providerName="System.Data.SqlClient" />
+   </connectionStrings>
+   ```
+
+   Leave it empty to use the automatic demo mode.
+3. Start the application (Option A) or press **F5** in Visual Studio.
+
+> ⚠️ The connection string is **no longer hard-coded**. The machine-specific string that used to live in
+> `FormMitteilungen.cs` was removed – every form now goes through
+> [`SQLverbindung.cs`](./Klinikum_Stuttgart/SQLverbindung.cs).
+
+#### Option C – Build from source
+
+```powershell
+# Visual Studio 2022: open Klinikum_Stuttgart.sln and press F5
+# or with MSBuild:
+msbuild .\Klinikum_Stuttgart.sln /t:Build /p:Configuration=Debug
+```
+
+Output: `Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe`
+
+> `dotnet build` does **not** work because the project uses the classic (non-SDK) format. Use MSBuild or Visual Studio.
+
+---
+
+### 🔑 Demo Accounts
+
+The automatically created demo database contains these accounts:
+
+| Role | Citizen ID | Password | Name |
+|---|---|---|---|
+| 👨‍⚕️ Doctor | `10000000000` | `1111` | Stefanie Schneiders (Gynecology) |
+| 👨‍⚕️ Doctor | `70000000000` | `7777` | Michael Hofflinger (Pathology, has open slots) |
+| 👨‍⚕️ Doctor | `20000000000` | `2222` | Erica Müller (Gynecology, has open slots) |
+| 📋 Secretariat | `11223344556` | `1234` | Lina Finn |
+| 📋 Secretariat | `11111111111` | `1234` | Felix Emma |
+| 🩺 Patient | `12345678910` | `1010` | Aysel Konuk |
+| 🩺 Patient | `12121212121` | `1212` | Hans Franker |
+| 🩺 Patient | `91919191919` | `5555` | Recai Büberci |
+
+When importing the `.bacpac`, the same doctor and secretariat accounts are available; patient data from the original export may differ.
+
+---
+
+### 🗄️ Database Schema
+
+Six tables; every primary key is an `IDENTITY` column. There are **no foreign keys** – relations are expressed through text values (e.g. `Tbl_Termine.TerminArzt` = “First Last”).
+
+| Table | Columns |
+|---|---|
+| `Tbl_Patient` | `Ptid` (smallint, identity), `PtName`, `PtNachname`, `PtBürgerID` (nchar(11)), `PtTelnummer`, `PtPasswort`, `PtGeschlecht` |
+| `Tbl_Doktor` | `Drid` (tinyint, identity), `DrName`, `DrNachname`, `DrFachrichtung`, `DrBürgerID` (char(11)), `DrPasswort` |
+| `Tbl_Sekretärin` | `Sekrid` (tinyint, identity), `SekrNameNachname`, `SekrBürgerID` (char(11)), `SekrPasswort` |
+| `Tbl_Fach` | `Fachid` (tinyint, identity), `FachName` |
+| `Tbl_Termine` | `Terminid` (int, identity), `TerminDatum` (text, `DD.MM.YYYY`), `TerminUhr` (text, `HH:MM`), `TerminFach`, `TerminArzt`, `TerminStatus` (bit, default `0` = free), `Ptid`, `PatientBeschwerden` (varchar(80)) |
+| `Tbl_Mitteilungen` | `MitteilungsId` (smallint, identity), `Mitteilung` (varchar(max)) |
+
+---
+
+### 🗂️ Project Structure
+
+```text
+Klinikum_Stuttgart/
+├─ Klinikum_Stuttgart.sln                  Visual Studio solution
+├─ README.md
+├─ LICENSE                                  MIT
+├─ Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac   database export (schema + data)
+└─ Klinikum_Stuttgart/
+   ├─ Program.cs                            entry point + global error handling
+   ├─ SQLverbindung.cs                      central connection handling / demo mode
+   ├─ App.config                            connection string (KlinikumConnectionString)
+   ├─ Database/
+   │  └─ Klinikum_Stuttgart_Demo.sql        schema + sample data (embedded into the exe)
+   ├─ Form*.cs / Form*.Designer.cs / *.resx 15 forms incl. layout and images
+   └─ Properties/                           AssemblyInfo, resources, settings
+```
+
+| Form | Module | Purpose |
+|---|---|---|
+| `FormEINGANG` | Gateway | Navigation to the three portals |
+| `FormPatientLogin` | Patient | Login, link to registration |
+| `FormPatientRegistrierung` | Patient | Create a patient |
+| `FormPatientDetail` | Patient | Slot search/booking, history, complaints |
+| `FormPatientEinstellung` | Patient | Edit profile |
+| `FormDoktorLogin` | Doctor | Login |
+| `FormDoktorDetail` | Doctor | Appointment list + patient complaints |
+| `FormDoktorEinstellung` | Doctor | Menu window leading to the profile |
+| `FormDoktorBearbeitung` | Doctor | Edit profile (specialty, password) |
+| `FormMitteilungen` | Doctor | Read hospital announcements |
+| `FormSekretariatLogin` | Secretariat | Login |
+| `FormSekretariatDetail` | Secretariat | Overview, create slots, send announcements |
+| `FormSekretariatDrPanel` | Secretariat | Doctor CRUD |
+| `FormSekretariatDrFächer` | Secretariat | Department CRUD |
+| `FormSekTerList` | Secretariat | Master appointment list |
+
+---
+
+### ⚠️ Known Limitations (intentional)
+
+This is a learning/demo stage. For real-world use, the following are missing:
+
+* **Plain-text passwords** (`PtPasswort`, `DrPasswort`, `SekrPasswort`) – no hashing, no salts
+* **Two queries built with string concatenation** (SQL injection risk): `FormPatientDetail.cs` and `FormDoktorDetail.cs`
+* **No foreign keys, indexes or unique constraints** → no referential integrity
+* **Legacy data access**: `SQLverbindung.verbindung()` opens a new connection per call, while some call sites close a different instance than the one they opened (cleanup relies on the GC). Demo mode therefore uses `Pooling=False`.
+* **No automated tests**, no logging, no async processing
+* **German UI only** (no localization)
+* Appointment date/time stored as text, doctor matching by name instead of IDs
+* Large images are embedded in `.resx` files and bloat the repository
+
+**Reasonable next steps:** password hashing, parameterize the remaining queries, add PK/FK + indexes, introduce a repository layer and tests, add localization.
 
 ---
 
 ## 🤝 İletişim & Katkı / Kontakt / Contact
-Sorularınız, geri bildirimleriniz veya katkılarınız için her zaman bir **Issue** veya **Pull Request** açabilirsiniz. ⭐ Beğendiyseniz projeye yıldız vermeyi unutmayın!
+
+Sorularınız, geri bildirimleriniz veya katkılarınız için bir **Issue** veya **Pull Request** açabilirsiniz.
+Für Fragen, Feedback oder Beiträge gerne ein **Issue** oder einen **Pull Request** öffnen.
+Feel free to open an **issue** or a **pull request** for questions, feedback or contributions. ⭐
 
 ---
 
 ## 📄 Lizenz / Lisans / License
-Dieses Projekt steht unter der [MIT License](LICENSE). / Bu proje MIT Lisansı ile korunmaktadır. / Distributed under the MIT License.
+
+Dieses Projekt steht unter der [MIT License](./LICENSE). / Bu proje MIT Lisansı ile korunmaktadır. / Distributed under the MIT License.

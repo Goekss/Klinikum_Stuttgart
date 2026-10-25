@@ -198,6 +198,7 @@
             this.RchBeschwerungen.Name = "RchBeschwerungen";
             this.RchBeschwerungen.Size = new System.Drawing.Size(193, 151);
             this.RchBeschwerungen.TabIndex = 2;
+            this.RchBeschwerungen.MaxLength = 80;
             this.RchBeschwerungen.Text = "";
             // 
             // CmbDr
