@@ -82,6 +82,7 @@ Die Anwendung sucht beim Start automatisch nach einer lokalen SQL-Server-Instanz
 (`(LocalDB)\MSSQLLocalDB`, `.\SQLEXPRESS`, `localhost`), legt bei Bedarf die Datenbank
 `Klinikum_Stuttgart_Demo` an, spielt Schema und Beispieldaten ein und öffnet das Hauptfenster.
 Im Fenstertitel erscheint dann **„Klinikum Stuttgart – Demo-Modus“**.
+Die Login-Formulare sind mit Demo-Zugangsdaten vorbelegt – ein Klick auf „Einloggen“ genügt.
 
 Findet die Anwendung keinen SQL Server, erscheint eine Meldung mit Einrichtungsanleitung statt eines Absturzes.
 
@@ -123,20 +124,22 @@ Ergebnis: `Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe`
 
 ### 🔑 Demo-Zugänge
 
-Diese Zugänge sind in der automatisch erzeugten Demo-Datenbank enthalten:
+Im **Demo-Modus sind die Zugangsdaten bereits eingetragen** – einfach auf „Einloggen“ klicken.
+Die Anwendung übernimmt automatisch den ersten Datensatz je Rolle, die Vorbelegung bleibt also auch nach eigenen Änderungen an den Stammdaten korrekt.
 
 | Rolle | Bürger-ID | Passwort | Name |
 |---|---|---|---|
-| 👨‍⚕️ Arzt | `10000000000` | `1111` | Stefanie Schneiders (Gynäkologie) |
-| 👨‍⚕️ Arzt | `70000000000` | `7777` | Michael Hofflinger (Pathologie, hat freie Termine) |
-| 👨‍⚕️ Arzt | `20000000000` | `2222` | Erica Müller (Gynäkologie, hat freie Termine) |
-| 📋 Sekretariat | `11223344556` | `1234` | Lina Finn |
-| 📋 Sekretariat | `11111111111` | `1234` | Felix Emma |
-| 🩺 Patient | `12345678910` | `1010` | Aysel Konuk |
-| 🩺 Patient | `12121212121` | `1212` | Hans Franker |
-| 🩺 Patient | `91919191919` | `5555` | Recai Büberci |
+| 👨‍⚕️ Arzt | `48160725390` | `4172` | Katrin Waldmann (Kardiologie) |
+| 👨‍⚕️ Arzt | `17940263854` | `6418` | Markus Zeidler (Hals-Nasen-Ohren) |
+| 👨‍⚕️ Arzt | `75832194066` | `1829` | Ulrike Sonnemann (Onkologie) |
+| 📋 Sekretariat | `57301846299` | `4416` | Nadine Krämer |
+| 📋 Sekretariat | `82640517399` | `2873` | Oliver Sandberg |
+| 🩺 Patient | `34719285601` | `2468` | Leonie Hartmann |
+| 🩺 Patient | `86204715933` | `8372` | Bernd Kuhlmann |
+| 🩺 Patient | `51938472660` | `6153` | Sandra Petrov |
 
-Beim Import der `.bacpac` stehen dieselben Arzt- und Sekretariats-Zugänge zur Verfügung; die Patientendaten der Original-Exportdatei können abweichen.
+**Weitere Testdaten:** 12 Ärzte, 13 Fachrichtungen, 8 Patienten, 16 Termine (10 frei / 6 vergeben inkl. Beschwerden) und 5 Mitteilungen.
+Beim Import der `.bacpac` gelten die Zugänge der Originaldatei; die Vorbelegung nutzt dann den ersten Datensatz der jeweiligen Tabelle.
 
 ---
 
@@ -272,6 +275,7 @@ Start-Process .\Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe
 Uygulama açılışta yerel bir SQL Server örneği arar (`(LocalDB)\MSSQLLocalDB`, `.\SQLEXPRESS`, `localhost`),
 gerekirse `Klinikum_Stuttgart_Demo` veritabanını oluşturur, şemayı ve örnek verileri yükler ve ana pencereyi açar.
 Pencere başlığında **„Klinikum Stuttgart – Demo-Modus“** yazar.
+Giriş formları demo hesaplarıyla önceden doldurulur – „Einloggen“ düğmesine basmak yeterlidir.
 
 SQL Server bulunamazsa çökme yerine, kurulum adımlarını anlatan bir mesaj gösterilir.
 
@@ -312,20 +316,22 @@ msbuild .\Klinikum_Stuttgart.sln /t:Build /p:Configuration=Debug
 
 ### 🔑 Demo hesapları
 
-Otomatik oluşturulan demo veritabanında bu hesaplar hazırdır:
+**Demo modunda alanlar önceden doldurulur** – tek yapılacak „Einloggen“ düğmesine basmak.
+Uygulama her rol için ilk kaydı otomatik getirir; kendi eklediğiniz kayıtlardan sonra da doğru çalışır.
 
 | Rol | Bürger-ID | Şifre | Ad |
 |---|---|---|---|
-| 👨‍⚕️ Doktor | `10000000000` | `1111` | Stefanie Schneiders (Jinekoloji) |
-| 👨‍⚕️ Doktor | `70000000000` | `7777` | Michael Hofflinger (Patoloji, boş randevusu var) |
-| 👨‍⚕️ Doktor | `20000000000` | `2222` | Erica Müller (Jinekoloji, boş randevusu var) |
-| 📋 Sekreterya | `11223344556` | `1234` | Lina Finn |
-| 📋 Sekreterya | `11111111111` | `1234` | Felix Emma |
-| 🩺 Hasta | `12345678910` | `1010` | Aysel Konuk |
-| 🩺 Hasta | `12121212121` | `1212` | Hans Franker |
-| 🩺 Hasta | `91919191919` | `5555` | Recai Büberci |
+| 👨‍⚕️ Doktor | `48160725390` | `4172` | Katrin Waldmann (Kardiyoloji) |
+| 👨‍⚕️ Doktor | `17940263854` | `6418` | Markus Zeidler (KBB) |
+| 👨‍⚕️ Doktor | `75832194066` | `1829` | Ulrike Sonnemann (Onkoloji) |
+| 📋 Sekreterya | `57301846299` | `4416` | Nadine Krämer |
+| 📋 Sekreterya | `82640517399` | `2873` | Oliver Sandberg |
+| 🩺 Hasta | `34719285601` | `2468` | Leonie Hartmann |
+| 🩺 Hasta | `86204715933` | `8372` | Bernd Kuhlmann |
+| 🩺 Hasta | `51938472660` | `6153` | Sandra Petrov |
 
-`.bacpac` içe aktarıldığında aynı doktor ve sekreterya hesapları geçerlidir; orijinal yedekteki hasta verileri farklılık gösterebilir.
+**Ek test verisi:** 12 doktor, 13 branş, 8 hasta, 16 randevu (10 boş / 6 dolu + şikayetler) ve 5 duyuru.
+`.bacpac` içe aktarıldığında orijinal dosyadaki hesaplar geçerlidir; ön doldurma her tablonun ilk kaydını kullanır.
 
 ---
 
@@ -462,6 +468,7 @@ On startup the application looks for a local SQL Server instance
 (`(LocalDB)\MSSQLLocalDB`, `.\SQLEXPRESS`, `localhost`), creates the database
 `Klinikum_Stuttgart_Demo` if needed, applies schema and sample data, and opens the main window.
 The window title then shows **“Klinikum Stuttgart – Demo-Modus”**.
+The login forms come prefilled with demo credentials – one click on “Einloggen” is all it takes.
 
 If no SQL Server can be found, a dialog with setup instructions appears instead of a crash.
 
@@ -503,20 +510,22 @@ Output: `Klinikum_Stuttgart\bin\Debug\Klinikum_Stuttgart.exe`
 
 ### 🔑 Demo Accounts
 
-The automatically created demo database contains these accounts:
+In **demo mode the credentials are already filled in** – just click “Einloggen”.
+The application picks the first record per role automatically, so the prefill stays correct even after you edit the master data.
 
 | Role | Citizen ID | Password | Name |
 |---|---|---|---|
-| 👨‍⚕️ Doctor | `10000000000` | `1111` | Stefanie Schneiders (Gynecology) |
-| 👨‍⚕️ Doctor | `70000000000` | `7777` | Michael Hofflinger (Pathology, has open slots) |
-| 👨‍⚕️ Doctor | `20000000000` | `2222` | Erica Müller (Gynecology, has open slots) |
-| 📋 Secretariat | `11223344556` | `1234` | Lina Finn |
-| 📋 Secretariat | `11111111111` | `1234` | Felix Emma |
-| 🩺 Patient | `12345678910` | `1010` | Aysel Konuk |
-| 🩺 Patient | `12121212121` | `1212` | Hans Franker |
-| 🩺 Patient | `91919191919` | `5555` | Recai Büberci |
+| 👨‍⚕️ Doctor | `48160725390` | `4172` | Katrin Waldmann (Cardiology) |
+| 👨‍⚕️ Doctor | `17940263854` | `6418` | Markus Zeidler (ENT) |
+| 👨‍⚕️ Doctor | `75832194066` | `1829` | Ulrike Sonnemann (Oncology) |
+| 📋 Secretariat | `57301846299` | `4416` | Nadine Krämer |
+| 📋 Secretariat | `82640517399` | `2873` | Oliver Sandberg |
+| 🩺 Patient | `34719285601` | `2468` | Leonie Hartmann |
+| 🩺 Patient | `86204715933` | `8372` | Bernd Kuhlmann |
+| 🩺 Patient | `51938472660` | `6153` | Sandra Petrov |
 
-When importing the `.bacpac`, the same doctor and secretariat accounts are available; patient data from the original export may differ.
+**More test data:** 12 doctors, 13 specialties, 8 patients, 16 appointments (10 free / 6 booked incl. complaints) and 5 announcements.
+When importing the `.bacpac`, the credentials of the original file apply; the prefill simply uses the first record of each table.
 
 ---
 

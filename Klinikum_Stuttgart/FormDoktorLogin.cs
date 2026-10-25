@@ -19,6 +19,22 @@ namespace Klinikum_Stuttgart
             InitializeComponent();
         }
          SQLverbindung conn=new SQLverbindung();
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            string benutzerId;
+            string passwort;
+            if (SQLverbindung.TryGetDemoLogin(
+                "SELECT TOP 1 DrBürgerID, DrPasswort FROM dbo.Tbl_Doktor ORDER BY Drid",
+                out benutzerId, out passwort))
+            {
+                MaskedID.Text = benutzerId;
+                Txtpasswort.Text = passwort;
+            }
+        }
+
         private void Btneinloggin_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("Select * from Tbl_Doktor where DrBürgerID=@p1 and DrPasswort=@p2",conn.verbindung());

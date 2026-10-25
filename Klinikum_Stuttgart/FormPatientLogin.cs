@@ -20,6 +20,21 @@ namespace Klinikum_Stuttgart
 
         SQLverbindung vrb = new SQLverbindung(); 
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            string benutzerId;
+            string passwort;
+            if (SQLverbindung.TryGetDemoLogin(
+                "SELECT TOP 1 PtBürgerID, PtPasswort FROM dbo.Tbl_Patient ORDER BY Ptid",
+                out benutzerId, out passwort))
+            {
+                MaskedID.Text = benutzerId;
+                Txtpasswort.Text = passwort;
+            }
+        }
+
         private void Lnkregis_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FrmPatRegistrieren fr = new FrmPatRegistrieren();

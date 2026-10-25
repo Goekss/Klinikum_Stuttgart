@@ -257,6 +257,49 @@ namespace Klinikum_Stuttgart
             return null;
         }
 
+        /// <summary>
+        /// Liefert die Zugangsdaten des ersten Datensatzes einer Demo-Tabelle, damit sich
+        /// Tester im Demo-Modus nicht selbst anmelden muessen. Ausserhalb des Demo-Modus
+        /// (also bei eigener Datenbank) wird nichts vorbelegt.
+        /// </summary>
+        internal static bool TryGetDemoLogin(string query, out string benutzerId, out string passwort)
+        {
+            benutzerId = null;
+            passwort = null;
+
+            try
+            {
+                if (!IsDemoMode)
+                {
+                    return false;
+                }
+
+                using (SqlConnection connection = new SqlConnection(EnsureConnectionString()))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (!reader.Read())
+                        {
+                            return false;
+                        }
+
+                        benutzerId = (reader.GetValue(0) ?? string.Empty).ToString().Trim();
+                        passwort = (reader.GetValue(1) ?? string.Empty).ToString().Trim();
+                        return benutzerId.Length > 0 && passwort.Length > 0;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                // Die Vorbelegung ist reiner Komfort - Fehler duerfen den Login nicht blockieren.
+                benutzerId = null;
+                passwort = null;
+                return false;
+            }
+        }
+
         private static string BuildSetupHint()
         {
             StringBuilder hint = new StringBuilder();

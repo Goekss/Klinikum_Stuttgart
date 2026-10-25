@@ -6,6 +6,9 @@
    (siehe SQLverbindung.cs) und kann alternativ manuell in SSMS ausgefuehrt
    werden, wenn keine .bacpac importiert werden soll.
 
+   Die Demo-Zugaenge (erste Zeile je Tabelle) werden im Demo-Modus
+   automatisch in die Login-Formulare eingetragen.
+
    Schema-Quelle: Klinikum_Stuttgart_MicrosoftSqlServer_All_DATA.bacpac
    ========================================================================= */
 
@@ -110,59 +113,74 @@ GO
 IF NOT EXISTS (SELECT 1 FROM dbo.Tbl_Doktor)
 BEGIN
     INSERT INTO dbo.Tbl_Doktor (DrName, DrNachname, DrFachrichtung, DrBürgerID, DrPasswort) VALUES
-        ('Stefanie', 'Schneiders', 'Gynäkologie',      '10000000000', '1111'),
-        ('Erica',    'Müller',     'Gynäkologie',      '20000000000', '2222'),
-        ('Gizem',    'Bicer Konuk','Physiologie',      '90909090909', '9090'),
-        ('Gerhart',  'Blumberg',   'Urologie',         '99887766554', '1234'),
-        ('Anil',     'Seker',      'Neurologie',       '13131313131', '1234'),
-        ('Richard',  'Heldel',     'Onkologie',        '30000000000', '3333'),
-        ('Jane',     'Mortsensen', 'Dermatologie',     '40000000000', '4444'),
-        ('Johann',   'German',     'Hals-Nasen-Ohren', '60000000000', '6666'),
-        ('Christina','Böhm',       'Allgemeinmedizin', '80000000000', '8888'),
-        ('Maria',    'Mayer',      'Urologie',         '50000000000', '5555'),
-        ('Michael',  'Hofflinger', 'Pathologie',       '70000000000', '7777'),
-        ('Adam',     'Dogualp',    'Neurologie',       '90000000000', '9999');
+        ('Katrin',   'Waldmann',    'Kardiologie',      '48160725390', '4172'),
+        ('Tobias',   'Rehberg',     'Innere Medizin',   '72615384902', '8306'),
+        ('Miriam',   'Albrecht',    'Dermatologie',     '30591827465', '5921'),
+        ('Jonas',    'Kirchhoff',   'Neurologie',       '91734602815', '2648'),
+        ('Sabine',   'Vogtländer',  'Pädiatrie',        '26840917355', '7139'),
+        ('Daniel',   'Strohmeier',  'Radiologie',       '59302746188', '3854'),
+        ('Anneke',   'Brüggemann',  'Urologie',         '84172639507', '9273'),
+        ('Markus',   'Zeidler',     'Hals-Nasen-Ohren', '17940263854', '6418'),
+        ('Franziska','Böhmert',     'Allgemeinmedizin', '63581920477', '5092'),
+        ('Hendrik',  'Ohlsen',      'Anästhesiologie',  '40295817366', '7361'),
+        ('Ulrike',   'Sonnemann',   'Onkologie',        '75832194066', '1829'),
+        ('Patrick',  'Amrhein',     'Pathologie',       '29047361855', '6745');
 END
 GO
 
 IF NOT EXISTS (SELECT 1 FROM dbo.Tbl_Sekretärin)
 BEGIN
     INSERT INTO dbo.Tbl_Sekretärin (SekrNameNachname, SekrBürgerID, SekrPasswort) VALUES
-        ('Lina Finn',  '11223344556', '1234'),
-        ('Felix Emma', '11111111111', '1234');
+        ('Nadine Krämer',  '57301846299', '4416'),
+        ('Oliver Sandberg', '82640517399', '2873');
 END
 GO
 
 IF NOT EXISTS (SELECT 1 FROM dbo.Tbl_Patient)
 BEGIN
     INSERT INTO dbo.Tbl_Patient (PtName, PtNachname, PtBürgerID, PtTelnummer, PtPasswort, PtGeschlecht) VALUES
-        ('Hans',  'Franker', '12121212121', '(152)00000000', '1212', 'Männlich'),
-        ('Aysel', 'Konuk',   '12345678910', '(123)45678912', '1010', 'Weiblich'),
-        ('Recai', 'Büberci', '91919191919', '(134)53547123', '5555', 'Männlich'),
-        ('Emrah', 'Özdven',  '55551111222', '(151)22233445', '1234', 'Männlich');
+        ('Leonie', 'Hartmann',  '34719285601', '(170)4829315', '2468', 'Weiblich'),
+        ('Bernd',  'Kuhlmann',  '86204715933', '(151)7264913', '8372', 'Männlich'),
+        ('Sandra', 'Petrov',    '51938472660', '(160)3948271', '6153', 'Weiblich'),
+        ('Fabian', 'Ostermann', '27486093155', '(176)9283746', '4091', 'Männlich'),
+        ('Nadine', 'Wehrle',    '93051827466', '(172)5639201', '7584', 'Weiblich'),
+        ('Ilker',  'Yildirim',  '64820973155', '(155)8374920', '3296', 'Männlich'),
+        ('Kerstin','Albers',    '18374659200', '(168)4291753', '9037', 'Weiblich'),
+        ('Tomasz', 'Nowak',     '79512038466', '(174)6182934', '5172', 'Männlich');
 END
 GO
 
 IF NOT EXISTS (SELECT 1 FROM dbo.Tbl_Termine)
 BEGIN
     INSERT INTO dbo.Tbl_Termine (TerminDatum, TerminUhr, TerminFach, TerminArzt, TerminStatus, Ptid, PatientBeschwerden) VALUES
-        ('15.11.2026', '09:00', 'Pathologie',  'Michael Hofflinger',  0, NULL,          NULL),
-        ('15.11.2026', '16:00', 'Pathologie',  'Michael Hofflinger',  0, NULL,          NULL),
-        ('18.11.2026', '12:00', 'Gynäkologie', 'Erica Müller',        0, NULL,          NULL),
-        ('18.11.2026', '08:30', 'Urologie',    'Gerhart Blumberg',    0, NULL,          NULL),
-        ('19.11.2026', '11:15', 'Neurologie',  'Anil Seker',          0, NULL,          NULL),
-        ('20.10.2026', '09:45', 'Onkologie',   'Richard Heldel',      1, '12121212121', 'Rückenschmerzen seit zwei Wochen'),
-        ('20.10.2026', '14:00', 'Onkologie',   'Richard Heldel',      1, '12345678910', 'Kontrolle der Blutwerte'),
-        ('21.10.2026', '10:00', 'Gynäkologie', 'Stefanie Schneiders', 1, '91919191919', 'Vorsorgeuntersuchung'),
-        ('22.10.2026', '15:30', 'Urologie',    'Maria Mayer',         1, '55551111222', 'Unregelmäßige Perioden');
+        -- freie Termine (TerminStatus = 0), buchbar im Patientenportal
+        ('12.11.2026', '08:30', 'Kardiologie',     'Katrin Waldmann',    0, NULL,          NULL),
+        ('12.11.2026', '10:15', 'Kardiologie',     'Katrin Waldmann',    0, NULL,          NULL),
+        ('13.11.2026', '09:00', 'Dermatologie',    'Miriam Albrecht',    0, NULL,          NULL),
+        ('16.11.2026', '14:45', 'Neurologie',      'Jonas Kirchhoff',    0, NULL,          NULL),
+        ('17.11.2026', '11:30', 'Pädiatrie',       'Sabine Vogtländer',  0, NULL,          NULL),
+        ('18.11.2026', '08:00', 'Urologie',        'Anneke Brüggemann',  0, NULL,          NULL),
+        ('19.11.2026', '16:00', 'Onkologie',       'Ulrike Sonnemann',   0, NULL,          NULL),
+        ('20.11.2026', '09:45', 'Pathologie',      'Patrick Amrhein',    0, NULL,          NULL),
+        ('23.11.2026', '13:15', 'Radiologie',      'Daniel Strohmeier',  0, NULL,          NULL),
+        ('24.11.2026', '10:30', 'Allgemeinmedizin','Franziska Böhmert',  0, NULL,          NULL),
+        -- vergebene Termine (TerminStatus = 1) inkl. Beschwerden
+        ('14.10.2026', '09:15', 'Kardiologie',     'Katrin Waldmann',    1, '34719285601', 'Herzstolpern seit zwei Wochen'),
+        ('15.10.2026', '11:00', 'Innere Medizin',  'Tobias Rehberg',     1, '86204715933', 'Anhaltende Magenschmerzen'),
+        ('16.10.2026', '15:30', 'Dermatologie',    'Miriam Albrecht',    1, '51938472660', 'Ausschlag am Unterarm'),
+        ('19.10.2026', '08:45', 'Neurologie',      'Jonas Kirchhoff',    1, '27486093155', 'Regelmäßige Kopfschmerzen'),
+        ('21.10.2026', '13:00', 'Pädiatrie',       'Sabine Vogtländer',  1, '93051827466', 'Kontrolluntersuchung'),
+        ('22.10.2026', '16:15', 'Onkologie',       'Ulrike Sonnemann',   1, '64820973155', 'Nachsorge nach Therapie');
 END
 GO
 
 IF NOT EXISTS (SELECT 1 FROM dbo.Tbl_Mitteilungen)
 BEGIN
     INSERT INTO dbo.Tbl_Mitteilungen (Mitteilung) VALUES
-        ('Alle Krankenschwestern & Krankenpfleger/innen und Ärzte & Ärztinnen können ab morgen an dem Schalter vorbeikommen, um ihre Krankenhaus-Arbeitszeitfassungskarte abzuholen.'),
-        ('Versammlung am Freitag um 13:00 Uhr im Notfallzimmer: geehrte Dr. Christina Böhm.'),
-        ('Die neue Dienstplanung für Dezember ist ab sofort im Sekretariat einsehbar.');
+        ('Alle Mitarbeitenden können ihre neue Arbeitszeitkarte ab Montag im Sekretariat abholen.'),
+        ('Teambesprechung am Freitag um 13:00 Uhr im Notfallzimmer - Teilnahme für alle Ärztinnen und Ärzte verpflichtend.'),
+        ('Die Dienstplanung für Dezember ist ab sofort im Sekretariat einsehbar.'),
+        ('Neue Hygiene-Schulung: Die Unterlagen liegen im Intranet bereit.'),
+        ('Wartungsarbeiten am Kliniksystem am Samstag zwischen 22:00 und 02:00 Uhr.');
 END
 GO
